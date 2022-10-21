@@ -19,7 +19,9 @@ You are free to use any programming language and/or framework that you would lik
 
 ## How to run
 In the directory 'proxy-server' run:
-
+```
+npm install
+```
 ```
 node index.js
 ```
