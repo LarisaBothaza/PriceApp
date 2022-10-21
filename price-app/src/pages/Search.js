@@ -39,7 +39,7 @@ function Search() {
     const items = eval(itemArrayString);
     const item = items[0];
 
-    const priceRegex = new RegExp(`data-productid="${item.id}".+price&quot;:(\\d+),`);
+    const priceRegex = new RegExp(`data-productid="${item.id}".+price&quot;:((\\d|\\.)+),`);
     const price = priceRegex.exec(text)[1];
 
     return {
